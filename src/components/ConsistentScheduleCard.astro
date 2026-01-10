@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import consistentSchedule from "../assets/images/illustration-consistent-schedule.webp";
+---
+
+<section>
+  <h2>Maintain a consistent posting schedule.</h2>
+
+  <Image
+    src={consistentSchedule}
+    alt="Weekly posting calendar for August 2024"
+    class="consistent-schedule-img"
+  />
+</section>
+
+<style>
+  section {
+    background-color: var(--yellow-500);
+    color: var(--black);
+    padding: 1rem;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .consistent-schedule-img {
+    width: 70%;
+    margin-bottom: -2.3rem;
+  }
+</style>

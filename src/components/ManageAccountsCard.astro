@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import multiplePlatforms from "../assets/images/illustration-multiple-platforms.webp";
+---
+
+<section>
+  <Image
+    src={multiplePlatforms}
+    alt="Instagram and X platform icons"
+    class="multiple-platforms-img"
+  />
+  <h2>Manage multiple accounts and platforms.</h2>
+</section>
+
+<style>
+  section {
+    align-items: center;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .multiple-platforms-img {
+    border-radius: 100%;
+    width: 100%;
+  }
+</style>

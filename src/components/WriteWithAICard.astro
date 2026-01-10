@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import aiContent from "../assets/images/illustration-ai-content.webp";
+---
+
+<section>
+  <h2>Write your content using AI.</h2>
+  <Image src={aiContent} alt="AI-generated content suggestions interface" />
+</section>
+
+<style>
+  section {
+    background-color: var(--yellow-500);
+    color: var(--black);
+    padding: 1.5rem;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  img {
+    width: 75%;
+  }
+</style>

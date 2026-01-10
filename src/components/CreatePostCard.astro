@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import createPost from "../assets/images/illustration-create-post.webp";
+---
+
+<section>
+  <h2>
+    Create and schedule content
+    <span>quicker.</span>
+  </h2>
+  <Image src={createPost} alt="Create post button with cursor icon" />
+</section>
+
+<style>
+  section {
+    background-color: var(--yellow-100);
+    color: var(--black);
+    padding: 2rem;
+    gap: 1.5rem;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  span {
+    font-style: italic;
+    color: var(--purple-500);
+  }
+
+  img {
+    width: 65%;
+  }
+</style>

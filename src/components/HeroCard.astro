@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import starsImage from "../assets/images/illustration-five-stars.webp";
+---
+
+<section>
+  <h1>
+    Social Media
+    <span class="highlight">10x</span>
+    <span class="italic">Faster</span>
+    with AI
+  </h1>
+
+  <div class="rating">
+    <Image src={starsImage} alt="5 star rating" width={180} />
+    <span class="reviews">Over 4,000 5-star reviews</span>
+  </div>
+</section>
+
+<style>
+  section {
+    align-items: center;
+    text-align: center;
+    background-color: var(--purple-500);
+    color: var(--white);
+    padding: 2.5rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  span.highlight {
+    color: var(--yellow-500);
+  }
+
+  span.italic {
+    font-style: italic;
+  }
+
+  span.reviews {
+    font-size: 1rem;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1.5rem;
+    gap: 0.4rem;
+  }
+</style>

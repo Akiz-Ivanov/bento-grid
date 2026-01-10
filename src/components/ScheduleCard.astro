@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import schedulePosts from "../assets/images/illustration-schedule-posts.webp";
+---
+
+<section>
+  <h2>Schedule to social media.</h2>
+
+  <Image
+    src={schedulePosts}
+    alt="Bar chart showing optimal posting times throughout the week"
+  />
+  <p>
+    Optimize post timings to publish content at the perfect time for your
+    audience.
+  </p>
+</section>
+
+<style>
+  section {
+    align-items: center;
+    background-color: var(--purple-100);
+    color: var(--black);
+    padding-inline: 1rem;
+    padding-block: 2rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.2;
+  }
+</style>

@@ -1,21 +1,61 @@
 ---
-
+import "../styles/global.css";
+import HeroCard from "../components/HeroCard.astro";
+import ManageAccountsCard from "../components/ManageAccountsCard.astro";
+import ConsistentScheduleCard from "../components/ConsistentScheduleCard.astro";
+import ScheduleCard from "../components/ScheduleCard.astro";
+import GrowFollowersCard from "../components/GrowFollowersCard.astro";
+import AudienceGrowthCard from "../components/AudienceGrowthCard.astro";
+import CreatePostCard from "../components/CreatePostCard.astro";
+import WriteWithAICard from "../components/WriteWithAICard.astro";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
 			href="./favicon-32x32.png"
 		/>
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+
 		<title>Frontend Mentor | Bento grid</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<div class="wrapper">
+				<HeroCard />
+				<ManageAccountsCard />
+				<ConsistentScheduleCard />
+				<ScheduleCard />
+				<GrowFollowersCard />
+				<AudienceGrowthCard />
+				<CreatePostCard />
+				<WriteWithAICard />
+			</div>
+		</main>
 	</body>
 </html>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+	}
+
+	.wrapper {
+		display: grid;
+		gap: 1.5rem;
+	}
+</style>
