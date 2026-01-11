@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Akiz-Ivanov/bento-grid](https://github.com/Akiz-Ivanov/bento-grid)
-- Live Site URL: [https://akiz-ivanov.github.io/bento-grid/](https://akiz-ivanov.github.io/bento-grid/)
+- Live Site URL: [https://bento-grid-akiz.netlify.app/](https://bento-grid-akiz.netlify.app/)
 
 ## My process
 
