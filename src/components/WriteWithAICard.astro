@@ -5,7 +5,14 @@ import aiContent from "../assets/images/illustration-ai-content.webp";
 
 <section>
   <h2>Write your content using AI.</h2>
-  <Image src={aiContent} alt="AI-generated content suggestions interface" />
+
+  <!-- Added `loading="eager"` and `fetchpriority="high"` cause image wasn't appearing in the design comparison screenshot -->
+  <Image
+    src={aiContent}
+    alt="AI-generated content suggestions interface"
+    loading="eager"
+    fetchpriority="high"
+  />
 </section>
 
 <style>
