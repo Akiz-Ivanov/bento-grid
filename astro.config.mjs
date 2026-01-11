@@ -4,4 +4,7 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://app.netlify.com/projects/capable-sprite-a5faec/deploys/',
+  devToolbar: {
+    enabled: false
+  }
 });

@@ -18,10 +18,11 @@ import createPost from "../assets/images/illustration-create-post.webp";
     padding: 2rem;
     gap: 1.5rem;
     overflow: hidden;
+    grid-area: create;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: var(--subheading-md);
   }
 
   span {
@@ -31,5 +32,11 @@ import createPost from "../assets/images/illustration-create-post.webp";
 
   img {
     width: 65%;
+  }
+
+  @media (min-width: 64rem) {
+    img {
+      width: 100%;
+    }
   }
 </style>

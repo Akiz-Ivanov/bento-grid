@@ -17,9 +17,23 @@ import growFollowers from "../assets/images/illustration-grow-followers.webp";
     padding-inline: 4rem;
     gap: 2.5rem;
     text-align: center;
+    grid-area: grow;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: var(--subheading-sm);
+  }
+
+  @media (min-width: 48rem) {
+    section {
+      flex-direction: row;
+      text-align: start;
+      padding: 1.5rem;
+      gap: 1rem;
+    }
+
+    img {
+      width: 45%;
+    }
   }
 </style>

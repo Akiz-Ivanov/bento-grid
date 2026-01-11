@@ -14,6 +14,10 @@ import WriteWithAICard from "../components/WriteWithAICard.astro";
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta
+			name="description"
+			content="Frontend Mentor challenge: A responsive bento grid layout showcasing social media management features. Built with Astro and CSS Grid."
+		/>
 		<meta name="generator" content={Astro.generator} />
 
 		<link
@@ -34,7 +38,7 @@ import WriteWithAICard from "../components/WriteWithAICard.astro";
 	</head>
 	<body>
 		<main>
-			<div class="wrapper">
+			<div class="bento-grid">
 				<HeroCard />
 				<ManageAccountsCard />
 				<ConsistentScheduleCard />
@@ -51,11 +55,54 @@ import WriteWithAICard from "../components/WriteWithAICard.astro";
 <style>
 	main {
 		margin: auto;
-		padding: 1rem;
+		padding-block: 1.5rem;
+		padding-inline: clamp(
+			1rem,
+			-4.9559rem + 19.8529vw,
+			7.75rem
+		); /* from 480px to 1024px */
 	}
 
-	.wrapper {
+	.bento-grid {
 		display: grid;
 		gap: 1.5rem;
+		max-width: 75rem;
+		margin-inline: auto;
+		grid-template-areas:
+			"hero"
+			"manage"
+			"maintain"
+			"schedule"
+			"grow"
+			"audience"
+			"create"
+			"write";
+	}
+
+	@media (min-width: 40rem) {
+		.bento-grid {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-areas:
+				"hero hero"
+				"manage maintain"
+				"write schedule"
+				"create audience"
+				"grow grow";
+		}
+	}
+
+	@media (min-width: 64rem) {
+		main {
+			padding-inline: 2rem;
+		}
+
+		.bento-grid {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-areas:
+				"create hero hero schedule"
+				"create manage maintain schedule"
+				"write manage maintain schedule"
+				"write audience grow grow";
+		}
 	}
 </style>

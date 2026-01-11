@@ -23,12 +23,13 @@ import starsImage from "../assets/images/illustration-five-stars.webp";
     text-align: center;
     background-color: var(--purple-500);
     color: var(--white);
-    padding: 2.5rem;
+    padding: clamp(2.5rem, 1.8785rem + 2.6519vw, 4rem);
+    grid-area: hero;
   }
 
   h1 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
+    margin-bottom: clamp(1rem, 0.1176rem + 2.9412vw, 2rem);
+    font-size: clamp(2.5rem, 1.982rem + 2.2099vw, 3.75rem);
   }
 
   span.highlight {

@@ -9,6 +9,7 @@ import schedulePosts from "../assets/images/illustration-schedule-posts.webp";
   <Image
     src={schedulePosts}
     alt="Bar chart showing optimal posting times throughout the week"
+    class="schedule-img"
   />
   <p>
     Optimize post timings to publish content at the perfect time for your
@@ -25,9 +26,24 @@ import schedulePosts from "../assets/images/illustration-schedule-posts.webp";
     padding-block: 2rem;
     gap: 1.5rem;
     text-align: center;
+    grid-area: schedule;
+    overflow: hidden;
   }
 
   p {
     line-height: 1.2;
+  }
+
+  @media (min-width: 64rem) {
+    section {
+      align-items: start;
+      text-align: start;
+      padding: 2rem;
+    }
+
+    .schedule-img {
+      width: 180%;
+      max-width: none;
+    }
   }
 </style>

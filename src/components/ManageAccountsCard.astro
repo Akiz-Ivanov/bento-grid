@@ -17,12 +17,26 @@ import multiplePlatforms from "../assets/images/illustration-multiple-platforms.
     align-items: center;
     background-color: var(--white);
     color: var(--black);
-    padding: 1rem;
+    padding: var(--spacing-16-24);
     gap: 1rem;
+    grid-area: manage;
   }
 
   .multiple-platforms-img {
-    border-radius: 100%;
+    border-radius: 100vw;
     width: 100%;
+    filter: drop-shadow(0 0 0.5rem hsl(0 0% 15% / 0.1));
+  }
+
+  @media (min-width: 64rem) {
+    section {
+      align-items: baseline;
+      overflow: clip;
+    }
+
+    .multiple-platforms-img {
+      max-width: none;
+      width: 150%;
+    }
   }
 </style>

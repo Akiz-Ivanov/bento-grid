@@ -17,13 +17,20 @@ import consistentSchedule from "../assets/images/illustration-consistent-schedul
   section {
     background-color: var(--yellow-500);
     color: var(--black);
-    padding: 1rem;
+    padding: var(--spacing-16-24);
     gap: 1rem;
     overflow: hidden;
+    grid-area: maintain;
   }
 
   .consistent-schedule-img {
     width: 70%;
-    margin-bottom: -2.3rem;
+    margin-bottom: clamp(-6rem, -0.7845rem + -6.5193vw, -2.3125rem);
+  }
+
+  @media (min-width: 64rem) {
+    .consistent-schedule-img {
+      width: 100%;
+    }
   }
 </style>

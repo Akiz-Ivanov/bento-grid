@@ -79,6 +79,13 @@ textarea {
   --font-weight-medium: 500;
   --font-family: "DM Sans", sans-serif;
 
+  --subheading-sm: clamp(1.5625rem, 1.3294rem + 0.9945vw, 2.125rem);
+  --subheading-md: clamp(1.75rem, 1.4392rem + 1.326vw, 2.5rem);
+  --subheading-lg: clamp(2.75rem, 2.232rem + 2.2099vw, 4rem);
+
+  /* Spacing */
+  --spacing-16-24: clamp(1rem, 0.7928rem + 0.884vw, 1.5rem);
+
   --card-radius: 0.6rem;
 }
 
@@ -99,12 +106,12 @@ body {
 h1,
 h2 {
   font-weight: var(--font-weight-medium);
-  line-height: .95;
+  line-height: .9;
   letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 1.55rem;
+  font-size: var(--subheading-sm);
 }
 
 section {
@@ -112,8 +119,15 @@ section {
   flex-direction: column;
   background-color: var(--white);
   border-radius: var(--card-radius);
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 /*==============================
   Media queries
 ===============================*/
+@media (min-width: 64rem) {
+  section {
+   padding: 1.5rem;
+  }
+}
